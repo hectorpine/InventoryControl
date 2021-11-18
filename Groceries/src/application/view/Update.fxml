@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UpdateController">
+   <children>
+      <Pane layoutY="7.0" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="118.0" layoutY="64.0" text="Update" />
+            <Button fx:id="home" layoutX="618.0" layoutY="70.0" mnemonicParsing="false" onAction="#firstScreen" text="Home" />
+            <TextField fx:id="idText" layoutX="214.0" layoutY="189.0" />
+            <Label layoutX="137.0" layoutY="196.0" text="Item ID:" />
+            <Button fx:id="searchButton" layoutX="232.0" layoutY="221.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="112.0" text="Search by ID" />
+            <TextField layoutX="469.0" layoutY="271.0" />
+            <TextField layoutX="469.0" layoutY="226.0" />
+            <TextField fx:id="nameText" layoutX="469.0" layoutY="189.0" />
+            <Label layoutX="408.0" layoutY="275.0" text="Cost" />
+            <Label layoutX="391.0" layoutY="231.0" text="Quantity" />
+            <Label layoutX="379.0" layoutY="193.0" prefHeight="17.0" prefWidth="82.0" text="Item Name:" />
+            <Button fx:id="updateButton" layoutX="338.0" layoutY="336.0" mnemonicParsing="false" onAction="#update" prefHeight="46.0" prefWidth="106.0" text="UPDATE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

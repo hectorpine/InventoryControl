@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="createButton" layoutX="205.0" layoutY="226.0" mnemonicParsing="false" onAction="#createPage" prefHeight="75.0" prefWidth="150.0" text="CREATE" />
+            <Button fx:id="updateButton" layoutX="205.0" layoutY="325.0" mnemonicParsing="false" onAction="#updatePage" prefHeight="75.0" prefWidth="150.0" text="UPDATE" />
+            <Button fx:id="viewButton" layoutX="381.0" layoutY="226.0" mnemonicParsing="false" onAction="#viewPage" prefHeight="75.0" prefWidth="150.0" text="VIEW LIST" />
+            <Button fx:id="deleteButton" layoutX="381.0" layoutY="325.0" mnemonicParsing="false" onAction="#deletePage" prefHeight="75.0" prefWidth="150.0" text="DELETE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.controller.DeleteController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Text layoutX="100.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete" />
+            <TextField fx:id="searchBar" layoutX="268.0" layoutY="103.0" />
+            <TextField fx:id="idText" editable="false" layoutX="269.0" layoutY="177.0" />
+            <TextField fx:id="nameText" editable="false" layoutX="269.0" layoutY="210.0" />
+            <TextField editable="false" layoutX="269.0" layoutY="278.0" />
+            <TextField editable="false" layoutX="269.0" layoutY="245.0" />
+            <Button fx:id="searchButton" layoutX="289.0" layoutY="142.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="109.0" text="Search" />
+            <Button fx:id="deleteButton" layoutX="292.0" layoutY="316.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="109.0" text="Delete" />
+            <Text layoutX="305.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Id:" />
+            <Text layoutX="193.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Id:" wrappingWidth="74.01953125" />
+            <Text layoutX="193.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="74.01953125" />
+            <Text layoutX="190.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" wrappingWidth="74.01953125" />
+            <Text layoutX="187.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="74.01953125" />
+            <Button fx:id="homeButton" layoutX="608.0" layoutY="74.0" mnemonicParsing="false" onAction="#firstScreen" text="Home" />
+            <Text fx:id="messageText" layoutX="372.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
