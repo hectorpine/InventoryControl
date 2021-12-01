@@ -32,8 +32,13 @@ public class ViewList {
 				String id = token[0];
 				int idInt = Integer.parseInt(id);
 				String name = token[1];
+				String quant = token[2];
+				int quantity = Integer.parseInt(quant);
+				String priceIn = token[3];
+				double price = Double.parseDouble(priceIn);
 				
-				Item item = new Item(idInt,name);
+				
+				Item item = new Item(idInt,name,quantity,price);
 				scan.add(item);
 					
 				}

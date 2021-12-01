@@ -39,7 +39,7 @@ public class Update {
 			
 			Item addition = newList.getInventory().get(i);
 			try {
-				Files.write(Paths.get("data/groceries.csv"), (addition.getId()+","+addition.getName()+"\n").getBytes(), StandardOpenOption.APPEND);
+				Files.write(Paths.get("data/groceries.csv"), (addition.getId()+","+addition.getName()+","+addition.getQuantity()+","+addition.getPrice()+"\n").getBytes(), StandardOpenOption.APPEND);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

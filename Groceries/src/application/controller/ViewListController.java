@@ -19,7 +19,7 @@ public class ViewListController {
 		Parent root;
 		try {
 			root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
-			Main.stage.setScene(new Scene(root, 800,800));
+			Main.stage.setScene(new Scene(root, 600,600));
 			Main.stage.show();				
 
 		} 

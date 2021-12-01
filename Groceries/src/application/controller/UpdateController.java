@@ -9,8 +9,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 public class UpdateController {
 	
@@ -21,11 +23,21 @@ public class UpdateController {
 	TextField nameText;
 	
 	@FXML
+	TextField quantityText;
+	
+	@FXML
+	TextField costText;
+	
+	@FXML
+	Text updateStatus;
+	
+	@FXML
 	Button updateButton;
+	
 	
 	//public static ViewList currentInventory;
 	public static int location;
-	
+	int flag = 0;
 	
 	public void firstScreen(ActionEvent event) {
 		
@@ -34,7 +46,7 @@ public class UpdateController {
 		
 		try {
 			root = FXMLLoader.load(getClass().getResource("../view/Main.fxml"));
-			Main.stage.setScene(new Scene(root, 800,800));
+			Main.stage.setScene(new Scene(root, 600,600));
 			Main.stage.show();				
 
 		} 
@@ -43,6 +55,7 @@ public class UpdateController {
 		}	
 	}
 
+	/**
 	public void search() {
 		
 		MainController.currentInventory = new ViewList();
@@ -60,6 +73,8 @@ public class UpdateController {
 			Item found = MainController.currentInventory.getInventory().get(itemNum);
 			location = itemNum;
 			nameText.setText(found.getName());
+			quantityText.setText(found.getQuantity());
+			
 			
 		}
 		
@@ -74,7 +89,49 @@ public class UpdateController {
 		
 		
 	}
+	**/
 	
+    public void search() {
+
+        MainController.currentInventory = new ViewList();
+        if (!idText.getText().isEmpty()) {
+            int key = Integer.parseInt(idText.getText());
+            int itemNum = Update.find(key, MainController.currentInventory);
+
+            if (itemNum == -1) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Information Dialog");
+                alert.setHeaderText(null);
+                alert.setContentText("This ID is Not Found");
+                alert.showAndWait();
+            } else {
+                flag = 1;
+                Item found = MainController.currentInventory.getInventory().get(itemNum);
+                location = itemNum;
+                nameText.setText(found.getName());
+                quantityText.setText(found.getQuantity());
+                costText.setText(found.getPrice());
+                
+            }
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Information Dialog");
+            alert.setHeaderText(null);
+            alert.setContentText("Please Enter ID");
+            alert.showAndWait();
+        }
+    }
+
+    public void update(ActionEvent event) {
+
+        MainController.currentInventory.getInventory().get(location).setName(nameText.getText());
+        MainController.currentInventory.getInventory().get(location).setQuantity(Integer.parseInt(quantityText.getText()));
+        MainController.currentInventory.getInventory().get(location).setPrice(Double.parseDouble(costText.getText()));
+        
+        
+        Update.updateCsv(MainController.currentInventory);
+        updateStatus.setText("Item successfully updated!");
+    }
 	
 	
 }

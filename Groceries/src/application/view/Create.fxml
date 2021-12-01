@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -7,19 +10,55 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CreateController">
    <children>
-      <Pane prefHeight="800.0" prefWidth="800.0">
+      <Pane prefHeight="600.0" prefWidth="600.0">
          <children>
-            <Label layoutX="137.0" layoutY="101.0" text="Create a new Item" />
-            <Button fx:id="home" layoutX="596.0" layoutY="96.0" mnemonicParsing="false" onAction="#firstScreen" text="Home" />
-            <Label layoutX="129.0" layoutY="198.0" text="Item ID:" />
-            <Label layoutX="115.0" layoutY="239.0" prefHeight="17.0" prefWidth="82.0" text="Item Name:" />
-            <Label layoutX="127.0" layoutY="277.0" text="Quantity" />
-            <Label layoutX="144.0" layoutY="321.0" text="Cost" />
-            <TextField fx:id="idText" layoutX="205.0" layoutY="194.0" />
-            <TextField fx:id="nameText" layoutX="205.0" layoutY="235.0" />
-            <TextField layoutX="205.0" layoutY="272.0" />
-            <TextField layoutX="205.0" layoutY="317.0" />
-            <Button fx:id="submitButton" layoutX="317.0" layoutY="378.0" mnemonicParsing="false" onAction="#addItem" prefHeight="45.0" prefWidth="125.0" text="SUBMIT" />
+            <Label layoutX="194.0" layoutY="94.0" text="Create Item" textFill="#413561">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="40.0" />
+               </font></Label>
+            <Button fx:id="home" layoutX="23.0" layoutY="114.0" mnemonicParsing="false" onAction="#firstScreen" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: white;" text="Home">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect></Button>
+            <Label layoutX="192.0" layoutY="199.0" text="Item ID:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="174.0" layoutY="246.0" prefHeight="17.0" prefWidth="82.0" text="Item Name:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="189.0" layoutY="297.0" text="Quantity:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="215.0" layoutY="348.0" text="Cost:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <TextField fx:id="idText" layoutX="271.0" layoutY="196.0" />
+            <TextField fx:id="nameText" layoutX="271.0" layoutY="243.0" />
+            <TextField fx:id="quantityText" layoutX="271.0" layoutY="294.0" />
+            <TextField fx:id="costText" layoutX="271.0" layoutY="345.0" />
+            <Button fx:id="submitButton" layoutX="238.0" layoutY="426.0" mnemonicParsing="false" onAction="#addItem" prefHeight="45.0" prefWidth="125.0" style="-fx-background-color: white;" text="CREATE">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect></Button>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/Untitled_Artwork%202.png" />
+               </image>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </ImageView>
+            <Text fx:id="statusUpdate" layoutX="238.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </Pane>
    </children>
