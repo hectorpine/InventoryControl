@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.UpdateController">
+   <children>
+      <Pane layoutY="7.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="235.0" layoutY="96.0" text="Update" textFill="#413561">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="40.0" />
+               </font></Label>
+            <Button fx:id="home" layoutX="23.0" layoutY="114.0" mnemonicParsing="false" onAction="#firstScreen" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: white;" text="Home">
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect>
+               <font>
+                  <Font name="AppleMyungjo Regular" size="18.0" />
+               </font></Button>
+            <TextField fx:id="idText" layoutX="82.0" layoutY="287.0" />
+            <Label layoutX="133.0" layoutY="238.0" text="Item ID:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Button fx:id="searchButton" layoutX="110.0" layoutY="342.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: white;" text="Search by ID">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect></Button>
+            <TextField layoutX="401.0" layoutY="342.0" />
+            <TextField layoutX="401.0" layoutY="287.0" />
+            <TextField fx:id="nameText" layoutX="401.0" layoutY="235.0" />
+            <Label layoutX="345.0" layoutY="343.0" prefHeight="25.0" prefWidth="39.0" text="Cost:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="16.0" />
+               </font></Label>
+            <Label layoutX="321.0" layoutY="290.0" text="Quantity:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="304.0" layoutY="238.0" prefHeight="17.0" prefWidth="82.0" text="Item Name:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Button fx:id="updateButton" layoutX="247.0" layoutY="433.0" mnemonicParsing="false" onAction="#update" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: white;" text="UPDATE">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect></Button>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/InventoryLogo.png" />
+               </image>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

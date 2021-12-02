@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.CreateController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="194.0" layoutY="94.0" text="Create Item" textFill="#413561">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="40.0" />
+               </font></Label>
+            <Button fx:id="home" layoutX="23.0" layoutY="114.0" mnemonicParsing="false" onAction="#firstScreen" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: white;" text="Home">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect></Button>
+            <Label layoutX="192.0" layoutY="199.0" text="Item ID:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="174.0" layoutY="246.0" prefHeight="17.0" prefWidth="82.0" text="Item Name:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="189.0" layoutY="297.0" text="Quantity:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <Label layoutX="215.0" layoutY="348.0" text="Cost:">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="15.0" />
+               </font></Label>
+            <TextField fx:id="idText" layoutX="271.0" layoutY="196.0" />
+            <TextField fx:id="nameText" layoutX="271.0" layoutY="243.0" />
+            <TextField layoutX="271.0" layoutY="294.0" />
+            <TextField layoutX="271.0" layoutY="345.0" />
+            <Button fx:id="submitButton" layoutX="238.0" layoutY="426.0" mnemonicParsing="false" onAction="#addItem" prefHeight="45.0" prefWidth="125.0" style="-fx-background-color: white;" text="CREATE">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" />
+               </effect></Button>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/InventoryLogo.png" />
+               </image>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

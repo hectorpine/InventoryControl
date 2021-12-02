@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e99ad" height="600.0" layoutX="-1.0" stroke="#8e99ae" strokeType="INSIDE" width="261.0" />
+            <Button fx:id="createButton" layoutX="42.0" layoutY="187.0" mnemonicParsing="false" onAction="#createPage" prefHeight="81.0" prefWidth="175.0" style="-fx-background-color: white;" text="CREATE">
+               <effect>
+                  <InnerShadow color="#8f82ae" height="28.5" radius="15.625" width="36.0" />
+               </effect>
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font></Button>
+            <Button fx:id="updateButton" layoutX="42.0" layoutY="337.0" mnemonicParsing="false" onAction="#updatePage" prefHeight="81.0" prefWidth="175.0" style="-fx-background-color: white;" text="UPDATE">
+               <effect>
+                  <InnerShadow color="#8f82ae" height="28.5" radius="15.625" width="36.0" />
+               </effect>
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font></Button>
+            <Button fx:id="viewButton" layoutX="42.0" layoutY="44.0" mnemonicParsing="false" onAction="#viewPage" prefHeight="81.0" prefWidth="175.0" style="-fx-background-color: white;" text="VIEW LIST">
+               <effect>
+                  <InnerShadow color="#8f82ae" height="28.5" radius="15.625" width="36.0" />
+               </effect>
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font></Button>
+            <Button fx:id="deleteButton" layoutX="42.0" layoutY="484.0" mnemonicParsing="false" onAction="#deletePage" prefHeight="81.0" prefWidth="175.0" style="-fx-background-color: white;" text="DELETE">
+               <effect>
+                  <InnerShadow color="#8f82ae" height="28.5" radius="15.625" width="36.0" />
+               </effect>
+               <font>
+                  <Font name="AppleMyungjo Regular" size="13.0" />
+               </font></Button>
+            <ImageView fitHeight="292.0" fitWidth="299.0" layoutX="306.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/InventoryLogo.png" />
+               </image>
+               <effect>
+                  <Glow level="0.66" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

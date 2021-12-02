@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ViewListController">
+   <children>
+      <Pane layoutX="-6.0" layoutY="-7.0" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="128.0" fitWidth="143.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../data/InventoryLogo.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <Label layoutX="235.0" layoutY="78.0" prefHeight="55.0" prefWidth="190.0" text="View List" textAlignment="CENTER" textFill="#413561">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="40.0" />
+               </font></Label>
+            <Button fx:id="home" alignment="BOTTOM_LEFT" layoutX="33.0" layoutY="142.0" mnemonicParsing="false" onAction="#firstScreen" prefHeight="35.0" prefWidth="71.0" style="-fx-background-color: white;" text="Home" textAlignment="CENTER" textFill="#413561">
+               <font>
+                  <Font name="AppleMyungjo Regular" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#8f82ae" height="20.5" radius="13.625" width="36.0" />
+               </effect></Button>
+            <TextArea fx:id="listArea" layoutX="173.0" layoutY="161.0" prefHeight="402.0" prefWidth="315.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
