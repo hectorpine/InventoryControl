@@ -16,7 +16,7 @@ The following  functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-https://github.com/hectorpine/InventoryControl/blob/master/walkthrough.gif
+<img src='https://github.com/hectorpine/InventoryControl/blob/master/walkthrough.gif' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
