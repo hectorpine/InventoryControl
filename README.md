@@ -1,7 +1,6 @@
 # Inventory Control
 
-HectorPinedaTodo2 is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
-Inventory Control is a Java application that allows users to create, read, update, and delete items into a locally stored inventory list using Eclipse and JavaFX. 
+Inventory Control is a Java application that allows users to create, read, update, and delete items into a locally stored inventory list using Eclipse and JavaFX. Application implements the MVC design pattern. 
 
 ## User Stories
 
